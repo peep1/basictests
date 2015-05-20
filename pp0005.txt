@@ -1,0 +1,183 @@
+Testid: 0005
+Doc: pp0005.txt
+
+Description:
+  NMCS Installation Test
+
+Note:
+Individual tests can be referred by
+   <doc number>.<Test number>.<Category>.<Subtest number>:
+
+5/20/2015 Todo: add the correct id to each below.
+
+==============
+Item
+Tests
+
+A. Test multiple simultaneous connections from independent groups (same type):
+1.- Two mesh connection setup on traffic from one end.
+2.- Two c/s static star connection setup on traffic from remote.
+3.- Two c/s general star connection setup on traffic from remote.
+4.- Two remote static star connections setup on traffic from remote.
+5.- Two remote static star connections setup on traffic from center.
+6.- Two remote general star connections setup on traffic from remote.
+7.- Two remote general star connections setup on traffic from center.
+8.- Two manual (NMS) connection setup.
+9.- two multicast connection setup
+
+B. Test multiple type simultaneous connections with overlap (common terminal):
+1.- Three mesh connection setup on traffic from one end. One terminal to three other terminals
+2.- One mesh and two c/s static star connection setup on traffic from remote, using a common terminal.
+3.- One mesh and two c/s general star connection setup on traffic from remote, using a common terminal.
+4.- One mesh and two remote static star connections setup on traffic from remote, using a common terminal.
+5.- One mesh and two remote static star connections setup on traffic from center, using a common terminal.
+6.- One mesh and two remote general star connections setup on traffic from remote, using a common terminal.
+7.- One mesh and two remote general star connections setup on traffic from center, using a common terminal.
+8.- one mesh and two manual (NMS) connection setup, using a common terminal
+9.- One mesh and two multicast connection setup, using a common terminal.
+
+C. Test mutli-chassis site:
+1.- With the common terminal at a site with multiple chassis (repeat the above tests.)
+2.- Three mesh connection setup on traffic from one end. One terminal to three other terminals.
+3.- One mesh and two c/s static star connection setup on traffic from remote, using a common terminal.
+4.- One mesh and two c/s general star connection setup on traffic from remote, using a common terminal.
+5.- One mesh and two remote static star connections setup on traffic from remote, using a common terminal.
+6.- One mesh and two remote static star connections setup on traffic from center, using a common terminal.
+7.- One mesh and two remote general star connections setup on traffic from remote, using a common terminal.
+8.- One mesh and two remote general star connections setup on traffic from center, using a common terminal.
+9.- One mesh and two manual (NMS) connection setup, using a common terminal.
+10.- One mesh and two multicast connection setup, using a common terminal.
+
+D. Test system configurations:
+Repeat the above tests with various configurations:
+1.- multiple mesh groups with no overlap
+2.- multiple general star groups with no overlap
+3.- multiple static star groups with no overlap
+4.- multiple general remote star groups
+5.- multiple static remote star groups
+6.- Combination of mesh, star, and remote star.
+7.- network with 1000 terminals
+8.- network with 500 groups
+9.- multiple c/s chassis
+
+E. Test "load configuration on the fly":
+repeat the above tests with various configurations:
+1.- From NMS, force "apply configuration" while no calls are setup
+2.- From NMS, force "apply configuration" while calls are setup
+3.- From NMS, force "apply configuration" while call setup is in progress
+4.- From NMS, force "apply configuration" while call cleardown is in progress
+
+F. Test changing the network configuration:
+repeat the above tests with various configurations:
+1.- From NMS, add terminals while no calls are setup
+2.- From NMS, add terminals while calls are setup
+3.- From NMS, add terminals while call setup is in progress
+4.- From NMS, add terminals while call cleardown is in progress
+5.- From NMS, add groups while no calls are setup
+6.- From NMS, add groups while calls are setup
+7.- From NMS, add groups while call setup is in progress
+8.- From NMS, add groups while call cleardown is in progress
+9.- From NMS, add frequency blocks while no calls are setup
+10.- From NMS, add frequency blocks while calls are setup
+11.- From NMS, add frequency blocks while call setup is in progress
+12.- From NMS, add frequency blocks while call cleardown is in progress
+13.- From NMS, add terminals to a group while no calls are setup
+14.- From NMS, add terminals to a group while calls are setup
+15.- From NMS, add terminals to a group while call setup is in progress
+16.- From NMS, add terminals to a group while call cleardown is in progress
+17.- From NMS, remove terminals while no calls are setup
+18.- From NMS, remove terminals while calls are setup
+19.- From NMS, remove terminals while call setup is in progress
+20.- From NMS, remove terminals  while call cleardown is in progress
+21.- From NMS, remove groups while no calls are setup
+22.- From NMS, remove groups while calls are setup
+23.- From NMS, remove groups while call setup is in progress
+24.- From NMS, remove groups while call cleardown is in progress
+25.- From NMS, remove frequency blocks while no calls are setup
+26.- From NMS, remove frequency blocks while calls are setup
+27.- From NMS, remove frequency blocks while call setup is in progress
+28.- From NMS, remove frequency blocks while call cleardown is in progress
+29.- From NMS, remove terminals from a group while no calls are setup
+30.- From NMS, remove terminals from a group while calls are setup
+31.- From NMS, remove terminals from a group while call setup is in progress
+32.- From NMS, remove terminals from a group while call cleardown is in progress
+
+G. Other Network changes:
+Repeat the tests scenarios while making the following network changes:
+1.-Change group quota
+2.-Change terminal (terrestrial) address and mask.
+3.-Add multiple terminal (terrestrial) address and mask.
+4.-Remove some terminal (terrestrial) address and mask
+
+H. NMCS Robustness under fault conditions:
+Repeat the tests scenarios while making the following equipment faults:
+1.- NMS GUI stop and restart
+2.- Signaling chassis stop and restart
+3.- Receiver chassis stop and restart
+4.- Remote site stop and restart
+5.- Multi-chassis site, 1st chassis stop and restart
+6.- Multi-chassis site, 2nd chassis stop and restart
+7.- NCS stop and restart
+8.- Disable receiver in signaling chassis
+9.- Disable receiver in receiver chassis
+10.- Disable receiver in remote chassis
+11.- to a single receiver terminal, attempt multiple connections
+12.- to a two receiver terminal, attempt multiple (more than 2) connections
+13.- to a four receiver terminal, attempt multiple (more than 4) connections
+
+I. NMCS License/quota conditions:
+Repeat the tests scenarios while making the following conditions:
+1.- sufficient license
+2.- insufficient license (attempt to make more connections than allowed)
+3.- insufficient license, increase license
+4.- sufficient license, decrease license
+5.- Repeat the above for NMS shared license
+6.- make calls requiring more bandwidth than available
+7.- make calls requiring the maximum bandwidth available, then remove bandwidth from the configuration
+
+J. Bandwidth defragmentation:
+Busy the network so as to approach the bandwidth limit
+
+K. Power:
+Repeat the tests scenarios:
+- check for correct power levels under each scenario
+
+L. Data Rate:
+Repeat the tests scenarios:
+- check for correct data rate under each scenario
+
+M. Frequencies:
+Repeat the tests scenarios:
+- check for correct frequency assignments under each scenario
+
+N. Power, FEC, Keying
+Repeat the tests scenarios while making the following conditions:
+1.- change the system FEC rate
+2.- change the 8PSK/QPSK/BPSK setting
+3.- change the antenna, G/T for a single terminal
+4.- change the antenna, G/T for multiple terminals
+
+O. NMS - operations:
+Repeat the tests scenarios while making the following NMS operations:
+1.- observe the frequency allocations spectrum
+2.- observe the frequency allocations list
+3.- observe the sessions list
+4.- observe the sessions list for each terminal
+5.- observe the IRX list
+6.- observe the active IRX list
+7.- observe the Eb/No for IRX
+8.- clear atb
+9.- clear all atb
+10.- clear session
+11.- clear all sessions
+12.- re-register terminal
+13.- re-boot terminal
+14.- observe the event log
+
+P. NMS - map
+Repeat the tests scenarios while making the following NMS operations:
+1.- show map
+2.- observer map
+3.- observe location icons
+4.- observe active connection lines
+5.- click on site icon to get site dialog

@@ -1,0 +1,46 @@
+Doc: config0001.txt
+
+Title: Configuration of Tested Equipment Setting:
+RF or IF:  IF   
+
+Test system consist of:
+
+1. Hub Pro Chassis IP : 192.168.1.11               
+Software Version: 
+2. GPS/HSRC presents:
+3. Noise Generator presents:
+4. Antenna Size: -----
+5. ODU: --------
+6. PC/Hosts IP: 192.168.1.20
+7. Voip Gw IP: 192.168.1.15
+
+1.  Remote Terminal IP1: 10.1.40.1 (M4100)
+Software Version: 
+2. Antenna Size: -----
+3. ODU: -------
+4. PC/Hosts IP: 10.1.40.20
+5. Voip Gw IP: 10.1.40.15
+
+1. Remote Terminal IP2: 10.1.50.1(M4000)
+Software Version: 
+2. Antenna Size: ---
+3. ODU: ----
+4. PC/Hosts IP: 10.1.50.20
+5. Voip Gw IP: 10.1.50.15
+
+1. Remote Terminal IP3: 10.1.60.1(M4100)
+Software Version: 
+2. Antenna Size: ---
+3. ODU: ----
+4. PC/Hosts IP: 10.1.60.20
+
+NMCS
+a.  IP: 192.168.1.17,  192.168.1.18
+b.  NMS version: 
+c.  NCS version: 
+d.  Sites:
+Terminal#1: Hub Station 192.168.1.11, one STSR and two STQR
+Terminal#4: Remote Station 10.1.40.1, M4100-HSC
+Terminal#5: Remote Station 10.1.50.1, M4000
+Terminal#6: Remote Station 10.1.60.1, M4100-HSC
+

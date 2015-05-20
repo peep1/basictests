@@ -1,0 +1,1598 @@
+Testid: 0003
+Doc: pp0003.txt
+
+Description:
+  Operations
+
+Note:
+Individual tests can be referred by
+   <doc number>.<Test number>.<Category>.<Subtest number>:
+For example
+    00003.2.A.1 
+
+5/20/2015 Todo: add the correct id to each below.
+==============
+
+Test 1: DAMA test for Star Group with Static and Overflow Outbound Unchecked
+1). Create only one star group: Star1
+A. DAMA
+1). DAMA connection from Remote#4 to Hub:__
+2). DAMA connection from Remote#5 to Hub:__
+3). DAMA connection from Remote#6 to Hub:__
+4). DAMA connection from Hub to Remote#4 (PC):__
+5). DAMA connection from Hub to Remote#5 (PC):__
+6). DAMA connection from Hub to Remote#6 (PC):__
+7). Voip connection from Remote#4 to Hub:__
+8). Voip connection from Remote#5 to Hub:__
+9). Voip connection from Hub to Remote#4:__
+10). Voip connection from Hub to Remote#5:__
+Double Hop(DHOP)
+11). DAMA connection from Remote#4 to Remote#5: 
+12). DAMA connection from Remote#4 to Remote#6: 
+13). DAMA connection from Remote#5 to Remote#6: 
+
+B. BOD:
+1). FTP from Remote#4 to Hub:__
+2). FTP from Remote#5 to Hub:__
+3). FTP from Remote#6 to Hub:__
+4). FTP from Remote#4 to Remote#5: Not test as DHOP does not be supported.
+5). FTP from Remote#4 to Remote#6: Not test as DHOP does not be supported.
+6). FTP from Remote#5 to Remote#6: Not test as DHOP does not be supported.
+
+C. Multicast:
+a. Do not use the 2nd transmitter at Hub:
+1). Mcast1 ,  Multicast from Hub over the STSR:__
+b. Use the 2nd transmitter at Hub:
+2). Mcast2 ,  Multicast from Hub over the 2nd transmitter:__
+c. Remote Multicasts:
+3). Mcast3 ,  Multicast from Remote#4 to Hub and Remote#5&6:__
+
+D. ALFC
+1). Hub: not test ,  adjustable L-Band attenuator is to be needed under IF Loop.
+2). Remote#4: not test,  adjustable L-Band attenuator is to be needed under IF Loop.
+3). Remote#5: not test,  adjustable L-Band attenuator is to be needed under IF Loop.
+4). Remote#6: not test,  adjustable L-Band attenuator is to be needed under IF Loop.
+
+E. Test for Multiple Chassis at Remote Site
+Not test ,  Terminals are not enough for this test. 
+
+============
+Test 2: DAMA test for Star Group with General and Overflow Outbound Unchecked
+2). Delete Star1 and create only one star group: Star2
+A. DAMA
+1). DAMA connection from Remote#4 to Hub:__
+2). DAMA connection from Remote#5 to Hub:__
+3). DAMA connection from Remote#6 to Hub:__
+4). DAMA connection from Hub to Remote#4 (PC):__
+5). DAMA connection from Hub to Remote#5 (PC):__
+6). DAMA connection from Hub to Remote#6 (PC):__
+7). Voip connection from Remote#4 to Hub:__
+8). Voip connection from Remote#5 to Hub:__
+9). Voip connection from Hub to Remote#4:__
+10). Voip connection from Hub to Remote#5:__
+Double Hop
+11). DAMA connection from Remote#4 to Remote#5: 
+12). DAMA connection from Remote#4 to Remote#6: 
+13). DAMA connection from Remote#5 to Remote#6: 
+
+B. BOD:
+1). FTP from Remote#4 to Hub:__
+2). FTP from Remote#5 to Hub:__
+3). FTP from Remote#6 to Hub:__
+4). FTP from Remote#4 to Remote#5: __
+5). FTP from Remote#4 to Remote#6: __
+6). FTP from Remote#5 to Remote#6: __
+
+C. Multicast:
+a. Do not use the 2nd transmitter at Hub:
+1).Mcast1 ,  Multicast from Hub over the STSR:__
+b. Use the 2nd transmitter at Hub:
+2). Mcast2 ,  Multicast from Hub over the 2nd transmitter:__
+c. Remote Multicast:
+3). Mcast3 ,  Multicast from Remote#4 to Hub and Remote#5&6:__
+
+D. ALFC
+1). Hub: not test ,  adjustable L-Band attenuator is to be needed under IF Loop.
+2). Remote#4: not test,  adjustable L-Band attenuator is to be needed under IF Loop.
+3). Remote#5: not test,  adjustable L-Band attenuator is to be needed under IF Loop.
+4). Remote#6: not test,  adjustable L-Band attenuator is to be needed under IF Loop.
+
+E. Test for Multiple Chassis at Remote Site
+Not test,  Termianls are not enough for this test. 
+============
+
+
+Test 3: DAMA test for Star Group with Static and Overflow Outbound Checked 
+3). Delete Star2 and create only one star group: Star3
+A
+DAMA
+1). DAMA connection from Remote#4 to Hub:__
+2). DAMA connection from Remote#5 to Hub:__
+3). DAMA connection from Remote#6 to Hub:__
+4). DAMA connection from Hub to Remote#4 (PC):__
+5). DAMA connection from Hub to Remote#5 (PC):__
+6). DAMA connection from Hub to Remote#6 (PC):__
+7). Voip connection from Remote#4 to Hub:__
+8). Voip connection from Remote#5 to Hub:__
+9). Voip connection from Hub to Remote#4:__
+10). Voip connection from Hub to Remote#5:__
+Double Hop
+11). DAMA connection from Remote#4 to Remote#5: 
+12). DAMA connection from Remote#4 to Remote#6: 
+13). DAMA connection from Remote#5 to Remote#6: 
+
+B
+BOD:
+1). FTP from Remote#4 to Hub:__
+2). FTP from Remote#5 to Hub:__
+3). FTP from Remote#6 to Hub:__
+4). FTP from Hub to any of Remotes: 
+5). FTP from Remote#4 to Remote#5: __
+6). FTP from Remote#4 to Remote#6: __
+7). FTP from Remote#5 to Remote#6: __
+
+C
+Multicast:
+a. Do not use the 2nd transmitter at Hub:
+1). Mcast1 ,  Multicast from Hub over the STSR:__
+b. Use the 2nd transmitter at Hub:
+2). Mcast2 ,  Multicast from Hub over the 2nd transmitter:__
+c. Remote Multicast:
+3). Mcast3 ,  Multicast from Remote#4 to Hub and Remote#5&6:__
+
+D
+ALFC
+1). Hub: not test ,  adjustable L-Band attenuator is to be needed under IF Loop.
+2). Remote#4: not test,  adjustable L-Band attenuator is to be needed under IF Loop.
+3). Remote#5: not test,  adjustable L-Band attenuator is to be needed under IF Loop.
+4). Remote#6: not test,  adjustable L-Band attenuator is to be needed under IF Loop.
+
+E. Test for Multiple Chassis at Remote Site
+Not test,  Terminals are not enough for this test. 
+
+=================
+Test 4: DAMA test for Star Group with General and Overflow Outbound Checked 
+4). Delete Star3 and create only one star group: Star4
+A
+DAMA
+1). DAMA connection from Remote#4 to Hub:__
+2). DAMA connection from Remote#5 to Hub:__
+3). DAMA connection from Remote#6 to Hub:__
+4). DAMA connection from Hub to Remote#4 (PC):__
+5). DAMA connection from Hub to Remote#5 (PC):__
+6). DAMA connection from Hub to Remote#6 (PC):__
+7). Voip connection from Remote#4 to Hub:__
+8). Voip connection from Remote#5 to Hub:__
+9). Voip connection from Hub to Remote#4:__
+10). Voip connection from Hub to Remote#5:__
+Double Hop
+11). DAMA connection from Remote#4 to Remote#5: 
+12). DAMA connection from Remote#4 to Remote#6: 
+13). DAMA connection from Remote#5 to Remote#6: 
+
+B
+BOD:
+1). FTP from Remote#4 to Hub:__
+2). FTP from Remote#5 to Hub:__
+3). FTP from Remote#6 to Hub:__
+4). FTP from Hub to any of Remotes: 
+
+5). FTP from Remote#4 to Remote#5: __
+6). FTP from Remote#4 to Remote#6: __
+7). FTP from Remote#5 to Remote#6: __
+
+C
+Multicast:
+a. Do not use the 2nd transmitter at Hub:
+1). Mcast1 ,  Multicast from Hub over the STSR:__
+b. Use the 2nd transmitter at Hub:
+2). Mcast2 ,  Multicast from Hub over the 2nd transmitter:__
+
+c. Remote Multicast:
+3). Mcast3 ,  Multicast from Remote#4 to Hub and Remote#5&6:__
+D
+ALFC
+1). Hub: not test ,  adjustable L-Band attenuator is to be needed under IF Loop.
+2). Remote#4: not test,  adjustable L-Band attenuator is to be needed under IF Loop.
+3). Remote#5: not test,  adjustable L-Band attenuator is to be needed under IF Loop.
+4). Remote#6: not test,  adjustable L-Band attenuator is to be needed under IF Loop.
+
+E. Test for Multiple Chassis at Remote Site
+Not test,  Terminals are not enough for this test. 
+
+=================
+Test 5: DAMA test for Remote Star Group 
+5). Delete Star4 and create only one star group: Star5
+A
+DAMA
+1). DAMA connection from Remote#4 to Hub: __
+2). DAMA connection from Remote#5 to Hub: __
+3). DAMA connection from Remote#6 to Hub: __
+4). DAMA connection from Hub to Remote#4 (PC): __
+5). DAMA connection from Hub to Remote#5 (PC): __
+6). DAMA connection from Hub to Remote#6 (PC): __
+7). DAMA connection from Remote#4 to Remote#5:__
+8). DAMA connection from Remote#6 to Remote#5:__
+9). DAMA connection from Remote#5 to Remote#4:__ 
+10). DAMA connection from Remote#5 to Remote#6 follow 9): 
+11). Voip connection from Remote#4 to Hub: __
+12). Voip connection from Remote#5 to Hub: __
+13). Voip connection from Hub to Remote#4: __
+14). Voip connection from Hub to Remote#5: __
+15). Voip connection from Remote#4 to Remote#5:__
+Double Hop
+16). DAMA connection from Remote#4 to Remote#6: 
+
+B
+BOD:
+1). FTP from Remote#4 to Hub: __
+2). FTP from Remote#5 to Hub: __
+3). FTP from Remote#6 to Hub: __
+4). FTP from Hub to any of Remotes: __
+5). FTP from Remote#4 to Remote#5: 
+6). FTP from Remote#6 to Remote#5: 
+7). FTP from Remote#5 to Remote#6: __
+C
+Multicast:
+a. Do not use the 2nd transmitter at Hub:
+1). Mcast1 ,  Multicast from Hub over the STSR:__
+b. Use the 2nd transmitter at Hub:
+2). Mcast2 ,  Multicast from Hub over the 2nd transmitter:__
+c. Remote Multicast:
+3). Mcast3 ,  Multicast from Remote#4 to Hub and Remote#5&6:__
+D
+ALFC
+1). Hub: not test ,  adjustable L-Band attenuator is to be needed under IF Loop.
+2). Remote#4: not test,  adjustable L-Band attenuator is to be needed under IF Loop.
+3). Remote#5: not test,  adjustable L-Band attenuator is to be needed under IF Loop.
+4). Remote#6: not test,  adjustable L-Band attenuator is to be needed under IF Loop.
+
+E. Test for Multiple Chassis at Remote Site
+Not test,  Terminals are not enough for this test. 
+
+=================
+Test 6: DAMA test for Remote Star Group 
+6). Delete Star5 and create only one star group: Star6
+A
+DAMA
+1). DAMA connection from Remote#4 to Hub: 
+2). DAMA connection from Remote#5 to Hub: __
+3). DAMA connection from Remote#6 to Hub: 
+4). DAMA connection from Hub to Remote#4 (PC): __
+5). DAMA connection from Hub to Remote#5 (PC): __
+6). DAMA connection from Hub to Remote#6 (PC): __
+7). DAMA connection from Remote#4 to Remote#5:__
+8). DAMA connection from Remote#6 to Remote#5:__
+9). DAMA connection from Remote#5 to Remote#4:__
+10). DAMA connection from Remote#5 to Remote#6 follow 9): 
+11). Voip connection from Remote#4 to Hub: 
+10). Voip connection from Remote#5 to Hub: __
+11). Voip connection from Hub to Remote#4: __
+12). Voip connection from Hub to Remote#5: __
+13). Voip connection from Remote#4 to Remote#5:__
+14). Voip connection from Remote#5 to Remote#4:__ 
+15). Voip connection from Remote#4 to Hub:__
+Double Hop
+14). DAMA connection from Remote#4 to Remote#6: 
+
+B
+BOD:
+1). FTP from Remote#4 to Hub: 
+2). FTP from Remote#5 to Hub: __
+3). FTP from Remote#6 to Hub: 
+4). FTP from Hub to any of Remotes: __
+5). FTP from Remote#4 to Remote#5: 
+6). FTP from Remote#6 to Remote#5: 
+7). FTP from Remote#4 to Remote#6: __
+C
+Multicast:
+a. Do not use the 2nd transmitter at Hub:
+1). Mcast1 ,  Multicast from Hub over the STSR:__
+b. Use the 2nd transmitter at Hub:
+2). Mcast2 ,  Multicast from Hub over the 2nd transmitter:__
+c. Remote Multicast:
+3). Mcast3 ,  Multicast from Remote#4 to Hub and Remote#5&6:__
+D
+ALFC
+1). Hub: not test ,  adjustable L-Band attenuator is to be needed under IF Loop.
+2). Remote#4: not test,  adjustable L-Band attenuator is to be needed under IF Loop.
+3). Remote#5: not test,  adjustable L-Band attenuator is to be needed under IF Loop.
+4). Remote#6: not test,  adjustable L-Band attenuator is to be needed under IF Loop.
+
+E. Test for Multiple Chassis at Remote Site
+Not test,  Terminals are not enough for this test. 
+
+=================
+Test 7: DAMA test for Mesh Group Includes the Hub Site 
+7). Delete Star6 and create only one mesh group: Mesh1
+A
+DAMA
+1). DAMA connection from Remote#4 to Hub:__
+2). DAMA connection from Remote#5 to Hub:__
+3). DAMA connection from Remote#6 to Hub:__
+4). DAMA connection from Hub to Remote#4 (PC):__
+5). DAMA connection from Hub to Remote#5 (PC):__
+6). DAMA connection from Hub to Remote#6 (PC):__
+7). DAMA connection from Remote#4 to Remote#5:__
+8). DAMA connection from Remote#4 to Remote#6:__
+9). DAMA connection from Remote#5 to Remote#6:__
+10). Voip connection from Remote#4 to Hub:__
+11). Voip connection from Remote#5 to Hub:__
+12). Voip connection from Hub to Remote#4:__
+13). Voip connection from Hub to Remote#5:__ 
+14). Voip connection from Remote#4 to Remote#5:__
+Double Hop
+DHOP should not be supported by Mesh Group. 
+B
+BOD:
+1). FTP from Remote#4 to Hub:__
+2). FTP from Remote#5 to Hub:__
+3). FTP from Remote#6 to Hub:__
+4). FTP from Remote#4 to Remote#5: 
+5). FTP from Remote#4 to Remote#6:
+2). FTP from Remote#5 to Remote#6: 
+C
+Multicast:
+a. Do not use the 2nd transmitter at Hub:
+1). Mcast1 ,  Multicast from Hub over the STSR:__
+b. Use the 2nd transmitter at Hub:
+2). Mcast2 ,  Multicast from Hub over the 2nd transmitter:__
+c. Remote Multicast:
+3). Mcast3 ,  Multicast from Remote#4 to Hub and Remote#5&6:__
+D
+ALFC
+1). Hub: not test ,  adjustable L-Band attenuator is to be needed under IF Loop.
+2). Remote#4: not test,  adjustable L-Band attenuator is to be needed under IF Loop.
+3). Remote#5: not test,  adjustable L-Band attenuator is to be needed under IF Loop.
+4). Remote#6: not test,  adjustable L-Band attenuator is to be needed under IF Loop.
+
+E. Test for Multiple Chassis at Remote Site
+Not test,  Terminals are not enough for this test. 
+
+=================
+Test 8: DAMA test for Mesh Group Excludes the Hub Site 
+8). Delete Mesh1 and create only one mesh group: Mesh2
+A
+DAMA
+1). DAMA connection from Remote#4 to Hub: __
+2). DAMA connection from Remote#5 to Hub: __
+3). DAMA connection from Remote#6 to Hub: __
+4). DAMA connection from Hub to Remote#4 (PC): __
+5). DAMA connection from Hub to Remote#5 (PC): __
+6). DAMA connection from Hub to Remote#6 (PC): __
+7). DAMA connection from Remote#4 to Remote#5:__
+8). DAMA connection from Remote#4 to Remote#6:__
+9). DAMA connection from Remote#5 to Remote#6: 
+10). Voip connection from Remote#4 to Hub: __
+11). Voip connection from Remote#5 to Hub: __
+12). Voip connection from Hub to Remote#4: __
+13). Voip connection from Hub to Remote#5: __
+14). Voip connection from Remote#4 to Remote#5:__
+Double Hop
+DHOP should not be supported by Mesh Group
+B
+BOD:
+1). FTP from Remote#4 to Remote#5: 
+2). FTP from Remote#4 to Remote#6: 
+3). FTP from Remote#5 to Remote#6: 
+C
+Multicast:
+a. Do not use the 2nd transmitter at Hub:
+1). Mcast1 ,  Multicast from Hub over the STSR:__
+b. Use the 2nd transmitter at Hub:
+2). Mcast2 ,  Multicast from Hub over the 2nd transmitter:__
+c. Remote Multicast:
+3). Mcast3 ,  Multicast from Remote#4 to Hub and Remote#5&6:__
+D
+ALFC
+1). Hub: not test ,  adjustable L-Band attenuator is to be needed under IF Loop.
+2). Remote#4: not test,  adjustable L-Band attenuator is to be needed under IF Loop.
+3). Remote#5: not test,  adjustable L-Band attenuator is to be needed under IF Loop.
+4). Remote#6: not test,  adjustable L-Band attenuator is to be needed under IF Loop.
+
+E. Test for Multiple Chassis at Remote Site
+Not test,  Terminals are not enough for this test. 
+
+=================
+Test 9: DAMA test for Star Group with Static and Overflow Outbound Unchecked
+9). Delete Mesh2 and create only one star group: Star7
+A
+DAMA
+1). DAMA connection from Remote#4 to Hub:__
+2). DAMA connection from Remote#5 to Hub:__
+3). DAMA connection from Remote#6 to Hub:__
+4). DAMA connection from Hub to Remote#4 (PC):__
+5). DAMA connection from Hub to Remote#5 (PC):__
+6). DAMA connection from Hub to Remote#6 (PC):__
+7). Voip connection from Remote#4 to Hub:__
+8). Voip connection from Remote#5 to Hub:__
+9). Voip connection from Hub to Remote#4:__
+10). Voip connection from Hub to Remote#5:__
+Double Hop
+11). DAMA connection from Remote#4 to Remote#5: 
+
+12). DAMA connection from Remote#4 to Remote#6: 
+
+13). DAMA connection from Remote#5 to Remote#6: 
+
+B
+BOD:
+1). FTP from Remote#4 to Hub:__
+2). FTP from Remote#5 to Hub:__
+3). FTP from Remote#6 to Hub:__
+4). FTP from Remote#4 to Remote#5: __
+5). FTP from Remote#4 to Remote#6: __
+2). FTP from Remote#5 to Remote#6: __
+C
+Multicast:
+a. Do not use the 2nd transmitter at Hub:
+1). Mcast1 ,  Multicast from Hub over the STSR: 
+b. Use the 2nd transmitter at Hub:
+2). Mcast2 ,  Multicast from Hub over the 2nd transmitter: 
+c. Remote Multicasts:
+3). Mcast3 ,  Multicast from Remote#4 to Hub and Remote#5&6: 
+D
+ALFC
+1). Hub: not test ,  adjustable L-Band attenuator is to be needed under IF Loop.
+2). Remote#4: not test,  adjustable L-Band attenuator is to be needed under IF Loop.
+3). Remote#5: not test,  adjustable L-Band attenuator is to be needed under IF Loop.
+4). Remote#6: not test,  adjustable L-Band attenuator is to be needed under IF Loop.
+
+E. Test for Multiple Chassis at Remote Site
+Not test,  Terminals are not enough for this test. 
+
+=================
+Test 10: DAMA test for Star Group with General and Overflow Outbound Unchecked
+10). Delete Star7 and create only one star group: Star8
+A
+DAMA
+1). DAMA connection from Remote#4 to Hub:__
+2). DAMA connection from Remote#5 to Hub:__
+3). DAMA connection from Remote#6 to Hub:__
+4). DAMA connection from Hub to Remote#4 (PC):__
+5). DAMA connection from Hub to Remote#5 (PC):__
+6). DAMA connection from Hub to Remote#6 (PC):__
+7). Voip connection from Remote#4 to Hub:__
+8). Voip connection from Remote#5 to Hub:__
+9). Voip connection from Hub to Remote#4:__
+10). Voip connection from Hub to Remote#5:__
+Double Hop
+11). DAMA connection from Remote#4 to Remote#5: 
+12). DAMA connection from Remote#4 to Remote#6: 
+13). DAMA connection from Remote#5 to Remote#6: 
+
+B
+BOD:
+1). FTP from Remote#4 to Hub:__
+2). FTP from Remote#5 to Hub:__
+3). FTP from Remote#6 to Hub:__
+4). FTP from Remote#4 to Remote#5: __
+5). FTP from Remote#4 to Remote#6: __
+2). FTP from Remote#5 to Remote#6: __
+C
+Multicast:
+a. Do not use the 2nd transmitter at Hub:
+1). Mcast1 ,  Multicast from Hub over the STSR: 
+b. Use the 2nd transmitter at Hub:
+2). Mcast2 ,  Multicast from Hub over the 2nd transmitter: 
+c. Remote Multicasts:
+3). Mcast3 ,  Multicast from Remote#4 to Hub and Remote#5&6: 
+D
+ALFC
+1). Hub: not test ,  adjustable L-Band attenuator is to be needed under IF Loop.
+2). Remote#4: not test,  adjustable L-Band attenuator is to be needed under IF Loop.
+3). Remote#5: not test,  adjustable L-Band attenuator is to be needed under IF Loop.
+4). Remote#6: not test,  adjustable L-Band attenuator is to be needed under IF Loop.
+
+E. Test for Multiple Chassis at Remote Site
+Not test,  Terminals are not enough for this test. 
+
+=================
+Test 11: DAMA test for Star Group with Static and Overflow Outbound Checked 
+11). Delete Star8 and create only one star group: Star9
+A
+DAMA
+1). DAMA connection from Remote#4 to Hub:__
+2). DAMA connection from Remote#5 to Hub:__
+3). DAMA connection from Remote#6 to Hub:__
+4). DAMA connection from Hub to Remote#4 (PC):__
+5). DAMA connection from Hub to Remote#5 (PC):__
+6). DAMA connection from Hub to Remote#6 (PC):__
+7). Voip connection from Remote#4 to Hub:__
+8). Voip connection from Remote#5 to Hub:__
+9). Voip connection from Hub to Remote#4:__
+10). Voip connection from Hub to Remote#5:__
+Double Hop
+11). DAMA connection from Remote#4 to Remote#5: 
+
+12). DAMA connection from Remote#4 to Remote#6: 
+
+13). DAMA connection from Remote#5 to Remote#6: 
+
+B
+BOD:
+1). FTP from Remote#4 to Hub:__
+2). FTP from Remote#5 to Hub:__
+3). FTP from Remote#6 to Hub:__
+4). FTP from Hub to any of Remotes: 
+!!
+5). FTP from Remote#4 to Remote#5: __
+6). FTP from Remote#4 to Remote#6: __
+7). FTP from Remote#5 to Remote#6: __
+C
+Multicast:
+a. Do not use the 2nd transmitter at Hub:
+1). Mcast1 ,  Multicast from Hub over the STSR: 
+
+b. Use the 2nd transmitter at Hub:
+2). Mcast2 ,  Multicast from Hub over the 2nd transmitter: 
+
+c. Remote Multicasts:
+3). Mcast3 ,  Multicast from Remote#4 to Hub and Remote#5&6: 
+
+D
+ALFC
+1). Hub: not test ,  adjustable L-Band attenuator is to be needed under IF Loop.
+2). Remote#4: not test,  adjustable L-Band attenuator is to be needed under IF Loop.
+3). Remote#5: not test,  adjustable L-Band attenuator is to be needed under IF Loop.
+4). Remote#6: not test,  adjustable L-Band attenuator is to be needed under IF Loop.
+
+E. Test for Multiple Chassis at Remote Site
+Not test,  Terminals are not enough for this test. 
+
+=================
+Test 12: DAMA test for Star Group with General and Overflow Outbound Checked 
+12). Delete Star9 and create only one star group: Star10
+A
+DAMA
+1). DAMA connection from Remote#4 to Hub:__
+2). DAMA connection from Remote#5 to Hub:__
+3). DAMA connection from Remote#6 to Hub:__
+4). DAMA connection from Hub to Remote#4 (PC):__
+5). DAMA connection from Hub to Remote#5 (PC):__
+6). DAMA connection from Hub to Remote#6 (PC):__
+7). Voip connection from Remote#4 to Hub:__
+8). Voip connection from Remote#5 to Hub:__
+9). Voip connection from Hub to Remote#4:__
+10). Voip connection from Hub to Remote#5:__
+Double Hop
+11). DAMA connection from Remote#4 to Remote#5: 
+
+12). DAMA connection from Remote#4 to Remote#6: 
+
+13). DAMA connection from Remote#5 to Remote#6: 
+
+B
+BOD:
+1). FTP from Remote#4 to Hub:__
+2). FTP from Remote#5 to Hub:__
+3). FTP from Remote#6 to Hub:__
+4). FTP from Hub to any of Remotes: 
+!!
+5). FTP from Remote#4 to Remote#5: __
+6). FTP from Remote#4 to Remote#6: __
+7). FTP from Remote#5 to Remote#6: __
+C
+Multicast:
+a. Do not use the 2nd transmitter at Hub:
+1). Mcast1 ,  Multicast from Hub over the STSR: 
+
+b. Use the 2nd transmitter at Hub:
+2). Mcast2 ,  Multicast from Hub over the 2nd transmitter: 
+
+c. Remote Multicasts:
+3). Mcast3 ,  Multicast from Remote#4 to Hub and Remote#5&6: 
+
+D
+ALFC
+1). Hub: not test ,  adjustable L-Band attenuator is to be needed under IF Loop.
+2). Remote#4: not test,  adjustable L-Band attenuator is to be needed under IF Loop.
+3). Remote#5: not test,  adjustable L-Band attenuator is to be needed under IF Loop.
+4). Remote#6: not test,  adjustable L-Band attenuator is to be needed under IF Loop.
+
+E. Test for Multiple Chassis at Remote Site
+Not test,  Terminals are not enough for this test. 
+
+=================
+Test 13: DAMA test for Remote Star Group 
+13). Delete Star10 and create only one star group: Star11
+A
+DAMA
+1). DAMA connection from Remote#4 to Hub: __
+2). DAMA connection from Remote#5 to Hub: __
+3). DAMA connection from Remote#6 to Hub: __
+4). DAMA connection from Hub to Remote#4 (PC): __
+5). DAMA connection from Hub to Remote#5 (PC): __
+6). DAMA connection from Hub to Remote#6 (PC): __
+7). DAMA connection from Remote#4 to Remote#5:__
+8). DAMA connection from Remote#6 to Remote#5:__
+9). DAMA connection from Remote#5 to Remote#4:__
+10). DAMA connection from Remote#5 to Remote#6 follow 9): 
+
+10). Voip connection from Remote#4 to Hub: __
+11). Voip connection from Remote#5 to Hub: __
+12). Voip connection from Hub to Remote#4: __
+13). Voip connection from Hub to Remote#5: __
+14). Voip connection from Remote#4 to Remote#5:__
+Double Hop
+14). DAMA connection from Remote#4 to Remote#6: 
+
+B
+BOD:
+1). FTP from Remote#4 to Hub: __
+2). FTP from Remote#5 to Hub: __
+3). FTP from Remote#6 to Hub: __
+4). FTP from Hub to any of Remotes: __
+5). FTP from Remote#4 to Remote#5:
+
+6). FTP from Remote#6 to Remote#5: 
+
+7). FTP from Remote#5 to Remote#6: __
+C
+Multicast:
+a. Do not use the 2nd transmitter at Hub:
+1). Mcast1 ,  Multicast from Hub over the STSR: 
+
+b. Use the 2nd transmitter at Hub:
+2). Mcast2 ,  Multicast from Hub over the 2nd transmitter: 
+
+c. Remote Multicasts:
+3). Mcast3 ,  Multicast from Remote#4 to Hub and Remote#5&6: 
+
+D
+ALFC
+1). Hub: not test ,  adjustable L-Band attenuator is to be needed under IF Loop.
+2). Remote#4: not test,  adjustable L-Band attenuator is to be needed under IF Loop.
+3). Remote#5: not test,  adjustable L-Band attenuator is to be needed under IF Loop.
+4). Remote#6: not test,  adjustable L-Band attenuator is to be needed under IF Loop.
+
+E. Test for Multiple Chassis at Remote Site
+Not test,  Terminals are not enough for this test. 
+
+=================
+Test 14: DAMA test for Remote Star Group 
+14). Delete Star11 and create only one star group: Star12
+A
+DAMA
+1). DAMA connection from Remote#4 to Hub: 
+2). DAMA connection from Remote#5 to Hub: __
+3). DAMA connection from Remote#6 to Hub: 
+4). DAMA connection from Hub to Remote#4 (PC): __
+5). DAMA connection from Hub to Remote#5 (PC): __
+6). DAMA connection from Hub to Remote#6 (PC): __
+7). DAMA connection from Remote#4 to Remote#5:__
+8). DAMA connection from Remote#6 to Remote#5:__
+9). DAMA connection from Remote#5 to Remote#4:__
+10). DAMA connection from Remote#5 to Remote#6 follow 9): 
+11). Voip connection from Remote#4 to Hub: 
+10). Voip connection from Remote#5 to Hub: __
+11). Voip connection from Hub to Remote#4: __
+12). Voip connection from Hub to Remote#5: __
+13). Voip connection from Remote#4 to Remote#5:__
+14). Voip connection from Remote#5 to Remote#4:__ 
+Double Hop
+14). DAMA connection from Remote#4 to Remote#6: 
+
+B
+BOD:
+1). FTP from Remote#4 to Hub: 
+2). FTP from Remote#5 to Hub: 
+3). FTP from Remote#6 to Hub: 
+
+4). FTP from Hub to any of Remotes:
+5). FTP from Remote#4 to Remote#5: 
+6). FTP from Remote#6 to Remote#5: 
+7). FTP from Remote#4 to Remote#6: __
+C
+Multicast:
+a. Do not use the 2nd transmitter at Hub:
+1). Mcast1 ,  Multicast from Hub over the STSR: 
+
+b. Use the 2nd transmitter at Hub:
+2). Mcast2 ,  Multicast from Hub over the 2nd transmitter: 
+
+c. Remote Multicasts:
+3). Mcast3 ,  Multicast from Remote#4 to Hub and Remote#5&6: 
+
+D
+ALFC
+1). Hub: not test ,  adjustable L-Band attenuator is to be needed under IF Loop.
+2). Remote#4: not test,  adjustable L-Band attenuator is to be needed under IF Loop.
+3). Remote#5: not test,  adjustable L-Band attenuator is to be needed under IF Loop.
+4). Remote#6: not test,  adjustable L-Band attenuator is to be needed under IF Loop.
+
+E. Test for Multiple Chassis at Remote Site
+Not test,  Terminals are not enough for this test. 
+
+=================
+Test 15: DAMA test for Mesh Group Includes the Hub Site 
+15). Delete Star12 and create only one mesh group: Mesh3
+A
+DAMA
+1). DAMA connection from Remote#4 to Hub:__
+2). DAMA connection from Remote#5 to Hub:__
+3). DAMA connection from Remote#6 to Hub:__
+4). DAMA connection from Hub to Remote#4 (PC):__
+5). DAMA connection from Hub to Remote#5 (PC):__
+6). DAMA connection from Hub to Remote#6 (PC):__
+7). DAMA connection from Remote#4 to Remote#5:__
+8). DAMA connection from Remote#4 to Remote#6:__
+9). DAMA connection from Remote#5 to Remote#6:__
+10). Voip connection from Remote#4 to Hub:__
+11). Voip connection from Remote#5 to Hub:__
+12). Voip connection from Hub to Remote#4:__
+13). Voip connection from Hub to Remote#5:__ 
+14). Voip connection from Remote#4 to Remote#5:__
+Double Hop
+DHOP should not be supported by Mesh Group. 
+B
+BOD:
+1). FTP from Remote#4 to Hub:__
+2). FTP from Remote#5 to Hub:__
+3). FTP from Remote#6 to Hub:__
+4). FTP from Remote#4 to Remote#5: 
+5). FTP from Remote#4 to Remote#6:
+6). FTP from Remote#5 to Remote#6: 
+
+C
+Multicast:
+a. Do not use the 2nd transmitter at Hub:
+1). Mcast1 ,  Multicast from Hub over the STSR: 
+
+b. Use the 2nd transmitter at Hub:
+2). Mcast2 ,  Multicast from Hub over the 2nd transmitter: 
+
+c. Remote Multicasts:
+3). Mcast3 ,  Multicast from Remote#4 to Hub and Remote#5&6: 
+
+D
+ALFC
+1). Hub: not test ,  adjustable L-Band attenuator is to be needed under IF Loop.
+2). Remote#4: not test,  adjustable L-Band attenuator is to be needed under IF Loop.
+3). Remote#5: not test,  adjustable L-Band attenuator is to be needed under IF Loop.
+4). Remote#6: not test,  adjustable L-Band attenuator is to be needed under IF Loop.
+
+E. Test for Multiple Chassis at Remote Site
+Not test,  Terminals are not enough for this test. 
+
+=================
+Test 16: DAMA test for Mesh Group Excludes the Hub Site 
+16). Delete Mesh3 and create only one mesh group: Mesh4
+A
+DAMA
+1). DAMA connection from Remote#4 to Hub: __
+2). DAMA connection from Remote#5 to Hub: __
+3). DAMA connection from Remote#6 to Hub: __
+4). DAMA connection from Hub to Remote#4 (PC): __
+5). DAMA connection from Hub to Remote#5 (PC): __
+6). DAMA connection from Hub to Remote#6 (PC): __
+7). DAMA connection from Remote#4 to Remote#5:__
+8). DAMA connection from Remote#4 to Remote#6:__
+9). DAMA connection from Remote#5 to Remote#6:__
+10). Voip connection from Remote#4 to Hub: __
+11). Voip connection from Remote#5 to Hub: __
+12). Voip connection from Hub to Remote#4: __
+13). Voip connection from Hub to Remote#5: __
+14). Voip connection from Remote#4 to Remote#5:__
+Double Hop
+DHOP should not be supported by Mesh Group
+B
+BOD:
+1). FTP from Remote#4 to Remote#5: 
+2). FTP from Remote#4 to Remote#6: 
+3). FTP from Remote#5 to Remote#6: 
+
+C
+Multicast:
+a. Do not use the 2nd transmitter at Hub:
+1). Mcast1 ,  Multicast from Hub over the STSR: 
+
+b. Use the 2nd transmitter at Hub:
+2). Mcast2 ,  Multicast from Hub over the 2nd transmitter: 
+
+c. Remote Multicasts:
+3). Mcast3 ,  Multicast from Remote#4 to Hub and Remote#5&6: 
+
+D
+ALFC
+1). Hub: not test ,  adjustable L-Band attenuator is to be needed under IF Loop.
+2). Remote#4: not test,  adjustable L-Band attenuator is to be needed under IF Loop.
+3). Remote#5: not test,  adjustable L-Band attenuator is to be needed under IF Loop.
+4). Remote#6: not test,  adjustable L-Band attenuator is to be needed under IF Loop.
+
+E. Test for Multiple Chassis at Remote Site
+Not test,  Terminals are not enough for this test. 
+
+=================
+Test 17: DAMA test for Star Group with Static and Overflow Outbound Unchecked
+17). Delete Mesh4 and create only one star group: Star1
+A
+DAMA
+1). DAMA connection from Remote#4 to Hub:__
+2). DAMA connection from Remote#5 to Hub:__
+3). DAMA connection from Remote#6 to Hub:__
+4). DAMA connection from Hub to Remote#4 (PC):__
+5). DAMA connection from Hub to Remote#5 (PC):__
+6). DAMA connection from Hub to Remote#6 (PC):__
+7). Voip connection from Remote#4 to Hub:__
+8). Voip connection from Remote#5 to Hub:__
+9). Voip connection from Hub to Remote#4:__
+10). Voip connection from Hub to Remote#5:__
+Double Hop
+11). DAMA connection from Remote#4 to Remote#5: 
+
+12). DAMA connection from Remote#4 to Remote#6: 
+
+13). DAMA connection from Remote#5 to Remote#6: 
+
+B
+BOD:
+1). FTP from Remote#4 to Hub:__
+2). FTP from Remote#5 to Hub:__
+3). FTP from Remote#6 to Hub:__
+4). FTP from Remote#4 to Remote#5: __
+5). FTP from Remote#4 to Remote#6: __
+6). FTP from Remote#5 to Remote#6: __
+C
+Multicast:
+a. Do not use the 2nd transmitter at Hub:
+1). Mcast1 ,  Multicast from Hub over the STSR:__
+b. Use the 2nd transmitter at Hub:
+2). Mcast2 ,  Multicast from Hub over the 2nd transmitter: __
+c. Remote Multicasts:
+3). Mcast3 ,  Multicast from Remote#4 to Hub and Remote#5&6: __
+D
+ALFC
+1). Hub: not test ,  adjustable L-Band attenuator is to be needed under IF Loop.
+2). Remote#4: not test,  adjustable L-Band attenuator is to be needed under IF Loop.
+3). Remote#5: not test,  adjustable L-Band attenuator is to be needed under IF Loop.
+4). Remote#6: not test,  adjustable L-Band attenuator is to be needed under IF Loop.
+
+E. Test for Multiple Chassis at Remote Site
+Not test ,  Terminals are not enough for this test. 
+
+=================
+Test 18: DAMA test for Star Group with General and Overflow Outbound Unchecked
+18). Delete Star1 and create only one star group: Star2
+A
+DAMA
+1). DAMA connection from Remote#4 to Hub:__
+2). DAMA connection from Remote#5 to Hub:__
+3). DAMA connection from Remote#6 to Hub:__
+4). DAMA connection from Hub to Remote#4 (PC):__
+5). DAMA connection from Hub to Remote#5 (PC):__
+6). DAMA connection from Hub to Remote#6 (PC):__
+7). Voip connection from Remote#4 to Hub:__
+8). Voip connection from Remote#5 to Hub:__
+9). Voip connection from Hub to Remote#4:__
+10). Voip connection from Hub to Remote#5:__
+Double Hop
+11). DAMA connection from Remote#4 to Remote#5: 
+
+12). DAMA connection from Remote#4 to Remote#6: 
+
+13). DAMA connection from Remote#5 to Remote#6: 
+
+B
+BOD:
+1). FTP from Remote#4 to Hub:__
+2). FTP from Remote#5 to Hub:__
+3). FTP from Remote#6 to Hub:__
+4). FTP from Remote#4 to Remote#5: 
+5). FTP from Remote#4 to Remote#6:
+6). FTP from Remote#5 to Remote#6: 
+
+C
+Multicast:
+a. Do not use the 2nd transmitter at Hub:
+1). Mcast1 ,  Multicast from Hub over the STSR:__
+b. Use the 2nd transmitter at Hub:
+2). Mcast2 ,  Multicast from Hub over the 2nd transmitter: __
+c. Remote Multicasts:
+3). Mcast3 ,  Multicast from Remote#4 to Hub and Remote#5&6: __
+
+D
+ALFC
+1). Hub: not test ,  adjustable L-Band attenuator is to be needed under IF Loop.
+2). Remote#4: not test,  adjustable L-Band attenuator is to be needed under IF Loop.
+3). Remote#5: not test,  adjustable L-Band attenuator is to be needed under IF Loop.
+4). Remote#6: not test,  adjustable L-Band attenuator is to be needed under IF Loop.
+
+E. Test for Multiple Chassis at Remote Site
+Not test ,  Terminals are not enough for this test. 
+
+=================
+Test 19: DAMA test for Star Group with Static and Overflow Outbound Checked 
+19). Delete Star2 and create only one star group: Star3
+A
+DAMA 
+1). DAMA connection from Remote#4 to Hub: 
+2). DAMA connection from Remote#5 to Hub: 
+3). DAMA connection from Remote#6 to Hub: 
+4). DAMA connection from Hub to Remote#4 (PC): 
+5). DAMA connection from Hub to Remote#5 (PC): 
+6). DAMA connection from Hub to Remote#6 (PC): 
+7). Voip connection from Remote#4 to Hub: 
+8). Voip connection from Remote#5 to Hub: 
+9). Voip connection from Hub to Remote#4: 
+10). Voip connection from Hub to Remote#5: 
+Double Hop
+11). DAMA connection from Remote#4 to Remote#5: 
+12). DAMA connection from Remote#4 to Remote#6: 
+13). DAMA connection from Remote#5 to Remote#6: 
+B
+BOD: 
+1). FTP from Remote#4 to Hub: 
+2). FTP from Remote#5 to Hub: 
+3). FTP from Remote#6 to Hub: 
+4). FTP from Remote#4 to Remote#5: 
+5). FTP from Remote#4 to Remote#6:
+6). FTP from Remote#5 to Remote#6: 
+C
+Multicast:
+a. Do not use the 2nd transmitter at Hub:
+1). Mcast1 ,  Multicast from Hub over the STSR:__
+b. Use the 2nd transmitter at Hub:
+2). Mcast2 ,  Multicast from Hub over the 2nd transmitter: __
+c. Remote Multicasts:
+3). Mcast3 ,  Multicast from Remote#4 to Hub and Remote#5&6: __
+
+D
+ALFC
+1). Hub: not test ,  adjustable L-Band attenuator is to be needed under IF Loop.
+2). Remote#4: not test,  adjustable L-Band attenuator is to be needed under IF Loop.
+3). Remote#5: not test,  adjustable L-Band attenuator is to be needed under IF Loop.
+4). Remote#6: not test,  adjustable L-Band attenuator is to be needed under IF Loop.
+
+E. Test for Multiple Chassis at Remote Site
+Not test ,  Terminals are not enough for this test. 
+
+=================
+Test 20: DAMA test for Star Group with General and Overflow Outbound Checked 
+20). Delete Star3 and create only one star group: Star4
+A
+DAMA  
+1). DAMA connection from Remote#4 to Hub: 
+2). DAMA connection from Remote#5 to Hub: 
+3). DAMA connection from Remote#6 to Hub: 
+4). DAMA connection from Hub to Remote#4 (PC): 
+5). DAMA connection from Hub to Remote#5 (PC): 
+6). DAMA connection from Hub to Remote#6 (PC): 
+7). Voip connection from Remote#4 to Hub: 
+8). Voip connection from Remote#5 to Hub: 
+9). Voip connection from Hub to Remote#4: 
+10). Voip connection from Hub to Remote#5: 
+Double Hop
+11). DAMA connection from Remote#4 to Remote#5: 
+12). DAMA connection from Remote#4 to Remote#6: 
+13). DAMA connection from Remote#5 to Remote#6: 
+B
+BOD: 
+1). FTP from Remote#4 to Hub: 
+2). FTP from Remote#5 to Hub: 
+3). FTP from Remote#6 to Hub: 
+4). FTP from Remote#4 to Remote#5: 
+5). FTP from Remote#4 to Remote#6:
+6). FTP from Remote#5 to Remote#6: 
+C
+Multicast:
+a. Do not use the 2nd transmitter at Hub:
+1). Mcast1 ,  Multicast from Hub over the STSR:__
+b. Use the 2nd transmitter at Hub:
+2). Mcast2 ,  Multicast from Hub over the 2nd transmitter: __
+
+c. Remote Multicasts:
+3). Mcast3 ,  Multicast from Remote#4 to Hub and Remote#5&6: __
+
+D
+ALFC
+1). Hub: not test ,  adjustable L-Band attenuator is to be needed under IF Loop.
+2). Remote#4: not test,  adjustable L-Band attenuator is to be needed under IF Loop.
+3). Remote#5: not test,  adjustable L-Band attenuator is to be needed under IF Loop.
+4). Remote#6: not test,  adjustable L-Band attenuator is to be needed under IF Loop.
+
+E. Test for Multiple Chassis at Remote Site
+Not test ,  Terminals are not enough for this test. 
+
+=================
+Test 21: DAMA test for Remote Star Group 
+21). Delete Star4 and create only one star group: Star5
+A
+DAMA
+1). DAMA connection from Remote#4 to Hub: __
+2). DAMA connection from Remote#5 to Hub: __
+3). DAMA connection from Remote#6 to Hub: __
+4). DAMA connection from Hub to Remote#4 (PC): __
+5). DAMA connection from Hub to Remote#5 (PC): __
+6). DAMA connection from Hub to Remote#6 (PC): __
+7). DAMA connection from Remote#4 to Remote#5: 
+
+8). DAMA connection from Remote#6 to Remote#5: 
+
+9). DAMA connection from Remote#5 to Remote#4: 
+
+10). Voip connection from Remote#4 to Hub: __
+11). Voip connection from Remote#5 to Hub: __
+12). Voip connection from Hub to Remote#4: __
+13). Voip connection from Hub to Remote#5: __
+14). Voip connection from Remote#4 to Remote#5: 
+
+Double Hop
+15). DAMA connection from Remote#4 to Remote#6: 
+
+B
+BOD:
+1). FTP from Remote#4 to Hub: __
+2). FTP from Remote#5 to Hub: __
+3). FTP from Remote#6 to Hub: __
+4). FTP from Hub to any of Remotes: __
+5). FTP from Remote#4 to Remote#5: 
+6). FTP from Remote#6 to Remote#5: 
+7). FTP from Remote#5 to Remote#6: __
+
+C
+Multicast:
+a. Do not use the 2nd transmitter at Hub:
+1). Mcast1 ,  Multicast from Hub over the STSR:__
+b. Use the 2nd transmitter at Hub:
+2). Mcast2 ,  Multicast from Hub over the 2nd transmitter: 
+
+c. Remote Multicasts:
+3). Mcast3 ,  Multicast from Remote#4 to Hub and Remote#5&6: __
+
+D
+ALFC
+1). Hub: not test ,  adjustable L-Band attenuator is to be needed under IF Loop.
+2). Remote#4: not test,  adjustable L-Band attenuator is to be needed under IF Loop.
+3). Remote#5: not test,  adjustable L-Band attenuator is to be needed under IF Loop.
+4). Remote#6: not test,  adjustable L-Band attenuator is to be needed under IF Loop.
+
+E. Test for Multiple Chassis at Remote Site
+Not test ,  Terminals are not enough for this test. 
+
+=================
+Test 22: DAMA test for Remote Star Group 
+22). Delete Star5 and create only one star group: Star6
+A
+DAMA  
+1). DAMA connection from Remote#4 to Hub: 
+2). DAMA connection from Remote#5 to Hub: 
+3). DAMA connection from Remote#6 to Hub: 
+4). DAMA connection from Hub to Remote#4 (PC): 
+5). DAMA connection from Hub to Remote#5 (PC): 
+6). DAMA connection from Hub to Remote#6 (PC): 
+7). DAMA connection from Remote#4 to Remote#5: 
+8). DAMA connection from Remote#6 to Remote#5: 
+9). DAMA connection from Remote#5 to Remote#4: 
+10). Voip connection from Remote#4 to Hub: 
+11). Voip connection from Remote#5 to Hub:
+12). Voip connection from Hub to Remote#4: 
+13). Voip connection from Hub to Remote#5: 
+14). Voip connection from Remote#4 to Remote#5: 
+Double Hop
+15). DAMA connection from Remote#4 to Remote#6: 
+B
+BOD:  
+1). FTP from Remote#4 to Hub: 
+2). FTP from Remote#5 to Hub: 
+3). FTP from Remote#6 to Hub: 
+4). FTP from Hub to any of Remotes: 
+5). FTP from Remote#4 to Remote#5: 
+6). FTP from Remote#6 to Remote#5: 
+7). FTP from Remote#5 to Remote#6: 
+C
+Multicast:
+a. Do not use the 2nd transmitter at Hub:
+1). Mcast1 ,  Multicast from Hub over the STSR:__
+b. Use the 2nd transmitter at Hub:
+2). Mcast2 ,  Multicast from Hub over the 2nd transmitter: __
+
+c. Remote Multicasts:
+3). Mcast3 ,  Multicast from Remote#4 to Hub and Remote#5&6: __
+
+D
+ALFC
+1). Hub: not test ,  adjustable L-Band attenuator is to be needed under IF Loop.
+2). Remote#4: not test,  adjustable L-Band attenuator is to be needed under IF Loop.
+3). Remote#5: not test,  adjustable L-Band attenuator is to be needed under IF Loop.
+4). Remote#6: not test,  adjustable L-Band attenuator is to be needed under IF Loop.
+
+E. Test for Multiple Chassis at Remote Site
+Not test ,  Terminals are not enough for this test. 
+
+=================
+Test 23: DAMA test for Mesh Group Includes the Hub Site
+23). Delete Star6 and create only one mesh group: Mesh1
+A
+DAMA   
+1). DAMA connection from Remote#4 to Hub: 
+2). DAMA connection from Remote#5 to Hub: 
+3). DAMA connection from Remote#6 to Hub: 
+4). DAMA connection from Hub to Remote#4 (PC): 
+5). DAMA connection from Hub to Remote#5 (PC): 
+6). DAMA connection from Hub to Remote#6 (PC): 
+7). DAMA connection from Remote#4 to Remote#5: 
+8). DAMA connection from Remote#4 to Remote#6: 
+9). DAMA connection from Remote#5 to Remote#6: 
+10). Voip connection from Remote#4 to Hub: 
+11). Voip connection from Remote#5 to Hub: 
+12). Voip connection from Hub to Remote#4: 
+13). Voip connection from Hub to Remote#5: 
+14). Voip connection from Remote#4 to Remote#5: 
+Double Hop
+DHOP should not be supported by Mesh Group. 
+B
+BOD:  
+1). FTP from Remote#4 to Hub: 
+2). FTP from Remote#5 to Hub: 
+3). FTP from Remote#6 to Hub: 
+4). FTP from Remote#4 to Remote#5: 
+5). FTP from Remote#4 to Remote#6:
+6). FTP from Remote#5 to Remote#6: 
+C
+Multicast:
+a. Do not use the 2nd transmitter at Hub:
+1). Mcast1 ,  Multicast from Hub over the STSR:__
+b. Use the 2nd transmitter at Hub:
+2). Mcast2 ,  Multicast from Hub over the 2nd transmitter: __
+
+c. Remote Multicasts:
+3). Mcast3 ,  Multicast from Remote#4 to Hub and Remote#5&6: __
+
+D
+ALFC
+1). Hub: not test ,  adjustable L-Band attenuator is to be needed under IF Loop.
+2). Remote#4: not test,  adjustable L-Band attenuator is to be needed under IF Loop.
+3). Remote#5: not test,  adjustable L-Band attenuator is to be needed under IF Loop.
+4). Remote#6: not test,  adjustable L-Band attenuator is to be needed under IF Loop.
+
+E. Test for Multiple Chassis at Remote Site
+Not test ,  Terminals are not enough for this test. 
+
+=================
+Test 24: DAMA test for Mesh Group Excludes the Hub Site
+24). Delete Mesh1 and create only one mesh group: Mesh2
+A
+DAMA   
+1). DAMA connection from Remote#4 to Hub: 
+2). DAMA connection from Remote#5 to Hub: 
+3). DAMA connection from Remote#6 to Hub: 
+4). DAMA connection from Hub to Remote#4 (PC): 
+5). DAMA connection from Hub to Remote#5 (PC): 
+6). DAMA connection from Hub to Remote#6 (PC): 
+7). DAMA connection from Remote#4 to Remote#5: 
+8). DAMA connection from Remote#4 to Remote#6: 
+9). DAMA connection from Remote#5 to Remote#6: 
+10). Voip connection from Remote#4 to Hub: 
+11). Voip connection from Remote#5 to Hub: 
+12). Voip connection from Hub to Remote#4: 
+13). Voip connection from Hub to Remote#5: 
+14). Voip connection from Remote#4 to Remote#5: 
+Double Hop
+DHOP should not be supported by Mesh Group. 
+B
+BOD:  
+1). FTP from Remote#4 to Hub: 
+2). FTP from Remote#5 to Hub: 
+3). FTP from Remote#6 to Hub: 
+4). FTP from Remote#4 to Remote#5: 
+5). FTP from Remote#4 to Remote#6:
+6). FTP from Remote#5 to Remote#6: 
+C
+Multicast:
+a. Do not use the 2nd transmitter at Hub:
+1). Mcast1 ,  Multicast from Hub over the STSR:__
+b. Use the 2nd transmitter at Hub:
+2). Mcast2 ,  Multicast from Hub over the 2nd transmitter: __
+
+c. Remote Multicasts:
+3). Mcast3 ,  Multicast from Remote#4 to Hub and Remote#5&6: __
+
+D
+ALFC
+1). Hub: not test ,  adjustable L-Band attenuator is to be needed under IF Loop.
+2). Remote#4: not test,  adjustable L-Band attenuator is to be needed under IF Loop.
+3). Remote#5: not test,  adjustable L-Band attenuator is to be needed under IF Loop.
+4). Remote#6: not test,  adjustable L-Band attenuator is to be needed under IF Loop.
+
+E. Test for Multiple Chassis at Remote Site
+Not test ,  Terminals are not enough for this test. 
+
+=================
+Test 25: DAMA test for Star Group with Static and Overflow Outbound Unchecked
+25). Delete Mesh2 and create only one star group: Star7
+A
+DAMA
+1). DAMA connection from Remote#4 to Hub:__
+2). DAMA connection from Remote#5 to Hub:__
+3). DAMA connection from Remote#6 to Hub:__
+4). DAMA connection from Hub to Remote#4 (PC):__
+5). DAMA connection from Hub to Remote#5 (PC):__
+6). DAMA connection from Hub to Remote#6 (PC):__
+7). Voip connection from Remote#4 to Hub:__
+8). Voip connection from Remote#5 to Hub:__
+9). Voip connection from Hub to Remote#4:__
+10). Voip connection from Hub to Remote#5:__
+Double Hop
+11). DAMA connection from Remote#4 to Remote#5: 
+
+12). DAMA connection from Remote#4 to Remote#6: 
+
+13). DAMA connection from Remote#5 to Remote#6: 
+
+B
+BOD:
+1). FTP from Remote#4 to Hub:__
+2). FTP from Remote#5 to Hub:__
+3). FTP from Remote#6 to Hub:__
+4). FTP from Remote#4 to Remote#5: __
+5). FTP from Remote#4 to Remote#6: __
+6). FTP from Remote#5 to Remote#6: __
+C
+Multicast:
+a. Do not use the 2nd transmitter at Hub:
+1). Mcast1 ,  Multicast from Hub over the STSR:__
+b. Use the 2nd transmitter at Hub:
+2). Mcast2 ,  Multicast from Hub over the 2nd transmitter: __
+
+c. Remote Multicasts:
+3). Mcast3 ,  Multicast from Remote#4 to Hub and Remote#5&6: __
+
+D
+ALFC
+1). Hub: not test ,  adjustable L-Band attenuator is to be needed under IF Loop.
+2). Remote#4: not test,  adjustable L-Band attenuator is to be needed under IF Loop.
+3). Remote#5: not test,  adjustable L-Band attenuator is to be needed under IF Loop.
+4). Remote#6: not test,  adjustable L-Band attenuator is to be needed under IF Loop.
+
+E. Test for Multiple Chassis at Remote Site
+Not test ,  Terminals are not enough for this test. 
+
+=================
+Test 26: DAMA test for Star Group with General and Overflow Outbound Unchecked
+26). Delete Star7 and create only one star group: Star8
+A
+DAMA
+1). DAMA connection from Remote#4 to Hub:__
+2). DAMA connection from Remote#5 to Hub:__
+3). DAMA connection from Remote#6 to Hub:__
+4). DAMA connection from Hub to Remote#4 (PC):__
+5). DAMA connection from Hub to Remote#5 (PC):__
+6). DAMA connection from Hub to Remote#6 (PC):__
+7). Voip connection from Remote#4 to Hub:__
+8). Voip connection from Remote#5 to Hub:__
+9). Voip connection from Hub to Remote#4:__
+10). Voip connection from Hub to Remote#5:__
+Double Hop
+11). DAMA connection from Remote#4 to Remote#5: 
+
+12). DAMA connection from Remote#4 to Remote#6: 
+
+13). DAMA connection from Remote#5 to Remote#6: 
+
+B
+BOD:
+1). FTP from Remote#4 to Hub:__
+2). FTP from Remote#5 to Hub:__
+3). FTP from Remote#6 to Hub:__
+4). FTP from Remote#4 to Remote#5: __
+5). FTP from Remote#4 to Remote#6: __
+6). FTP from Remote#5 to Remote#6: __
+C
+Multicast:
+a. Do not use the 2nd transmitter at Hub:
+1). Mcast1 ,  Multicast from Hub over the STSR:__
+b. Use the 2nd transmitter at Hub:
+2). Mcast2 ,  Multicast from Hub over the 2nd transmitter: __
+
+c. Remote Multicasts:
+3). Mcast3 ,  Multicast from Remote#4 to Hub and Remote#5&6: __
+
+D
+ALFC
+1). Hub: not test ,  adjustable L-Band attenuator is to be needed under IF Loop.
+2). Remote#4: not test,  adjustable L-Band attenuator is to be needed under IF Loop.
+3). Remote#5: not test,  adjustable L-Band attenuator is to be needed under IF Loop.
+4). Remote#6: not test,  adjustable L-Band attenuator is to be needed under IF Loop.
+
+E. Test for Multiple Chassis at Remote Site
+Not test ,  Terminals are not enough for this test. 
+
+=================
+Test 27: DAMA test for Star Group with Static and Overflow Outbound Checked 
+27). Delete Star8 and create only one star group: Star9
+A
+DAMA  
+1). DAMA connection from Remote#4 to Hub: 
+2). DAMA connection from Remote#5 to Hub: 
+3). DAMA connection from Remote#6 to Hub: 
+4). DAMA connection from Hub to Remote#4 (PC): 
+5). DAMA connection from Hub to Remote#5 (PC): 
+6). DAMA connection from Hub to Remote#6 (PC): 
+7). Voip connection from Remote#4 to Hub: 
+8). Voip connection from Remote#5 to Hub: 
+9). Voip connection from Hub to Remote#4: 
+10). Voip connection from Hub to Remote#5: 
+Double Hop
+11). DAMA connection from Remote#4 to Remote#5: 
+12). DAMA connection from Remote#4 to Remote#6: 
+13). DAMA connection from Remote#5 to Remote#6: 
+B
+BOD: 
+1). FTP from Remote#4 to Hub: 
+2). FTP from Remote#5 to Hub: 
+3). FTP from Remote#6 to Hub: 
+4). FTP from Remote#4 to Remote#5: 
+5). FTP from Remote#4 to Remote#6:
+6). FTP from Remote#5 to Remote#6: 
+C
+Multicast:
+a. Do not use the 2nd transmitter at Hub:
+1). Mcast1 ,  Multicast from Hub over the STSR:__
+b. Use the 2nd transmitter at Hub:
+2). Mcast2 ,  Multicast from Hub over the 2nd transmitter: __
+
+c. Remote Multicasts:
+3). Mcast3 ,  Multicast from Remote#4 to Hub and Remote#5&6: __
+
+D
+ALFC
+1). Hub: not test ,  adjustable L-Band attenuator is to be needed under IF Loop.
+2). Remote#4: not test,  adjustable L-Band attenuator is to be needed under IF Loop.
+3). Remote#5: not test,  adjustable L-Band attenuator is to be needed under IF Loop.
+4). Remote#6: not test,  adjustable L-Band attenuator is to be needed under IF Loop.
+
+E. Test for Multiple Chassis at Remote Site
+Not test ,  Terminals are not enough for this test. 
+
+=================
+Test 28: DAMA test for Star Group with General and Overflow Outbound Checked 
+28). Delete Star9 and create only one star group: Star10
+A
+DAMA  
+1). DAMA connection from Remote#4 to Hub: 
+2). DAMA connection from Remote#5 to Hub: 
+3). DAMA connection from Remote#6 to Hub: 
+4). DAMA connection from Hub to Remote#4 (PC): 
+5). DAMA connection from Hub to Remote#5 (PC): 
+6). DAMA connection from Hub to Remote#6 (PC): 
+7). Voip connection from Remote#4 to Hub: 
+8). Voip connection from Remote#5 to Hub: 
+9). Voip connection from Hub to Remote#4: 
+10). Voip connection from Hub to Remote#5: 
+Double Hop
+11). DAMA connection from Remote#4 to Remote#5: 
+12). DAMA connection from Remote#4 to Remote#6: 
+13). DAMA connection from Remote#5 to Remote#6: 
+B
+BOD: 
+1). FTP from Remote#4 to Hub: 
+2). FTP from Remote#5 to Hub: 
+3). FTP from Remote#6 to Hub: 
+4). FTP from Remote#4 to Remote#5: 
+5). FTP from Remote#4 to Remote#6:
+6). FTP from Remote#5 to Remote#6: 
+C
+Multicast:
+a. Do not use the 2nd transmitter at Hub:
+1). Mcast1 ,  Multicast from Hub over the STSR:__
+b. Use the 2nd transmitter at Hub:
+2). Mcast2 ,  Multicast from Hub over the 2nd transmitter: __
+
+c. Remote Multicasts:
+3). Mcast3 ,  Multicast from Remote#4 to Hub and Remote#5&6: __
+
+D
+ALFC
+1). Hub: not test ,  adjustable L-Band attenuator is to be needed under IF Loop.
+2). Remote#4: not test,  adjustable L-Band attenuator is to be needed under IF Loop.
+3). Remote#5: not test,  adjustable L-Band attenuator is to be needed under IF Loop.
+4). Remote#6: not test,  adjustable L-Band attenuator is to be needed under IF Loop.
+
+E. Test for Multiple Chassis at Remote Site
+Not test ,  Terminals are not enough for this test. 
+
+=================
+Test 29: DAMA test for Remote Star Group 
+29). Delete Star10 and create only one star group: Star11
+A
+DAMA
+1). DAMA connection from Remote#4 to Hub: __
+2). DAMA connection from Remote#5 to Hub: __
+3). DAMA connection from Remote#6 to Hub: __
+4). DAMA connection from Hub to Remote#4 (PC): __
+5). DAMA connection from Hub to Remote#5 (PC): __
+6). DAMA connection from Hub to Remote#6 (PC): __
+7). DAMA connection from Remote#4 to Remote#5: 
+
+8). DAMA connection from Remote#6 to Remote#5: 
+
+9). DAMA connection from Remote#5 to Remote#4: 
+
+10). Voip connection from Remote#4 to Hub: __
+11). Voip connection from Remote#5 to Hub: __
+12). Voip connection from Hub to Remote#4: __
+13). Voip connection from Hub to Remote#5: __
+14). Voip connection from Remote#4 to Remote#5: 
+
+Double Hop
+15). DAMA connection from Remote#4 to Remote#6: 
+
+B
+BOD:
+1). FTP from Remote#4 to Hub: __
+2). FTP from Remote#5 to Hub: __
+3). FTP from Remote#6 to Hub: __
+4). FTP from Hub to any of Remotes: __
+5). FTP from Remote#4 to Remote#5: 
+6). FTP from Remote#6 to Remote#5: 
+7). FTP from Remote#5 to Remote#6: __
+
+C
+Multicast:
+a. Do not use the 2nd transmitter at Hub:
+1). Mcast1 ,  Multicast from Hub over the STSR:__
+b. Use the 2nd transmitter at Hub:
+2). Mcast2 ,  Multicast from Hub over the 2nd transmitter: __
+c. Remote Multicasts:
+3). Mcast3 ,  Multicast from Remote#4 to Hub and Remote#5&6: __
+
+D
+ALFC
+1). Hub: not test ,  adjustable L-Band attenuator is to be needed under IF Loop.
+2). Remote#4: not test,  adjustable L-Band attenuator is to be needed under IF Loop.
+3). Remote#5: not test,  adjustable L-Band attenuator is to be needed under IF Loop.
+4). Remote#6: not test,  adjustable L-Band attenuator is to be needed under IF Loop.
+
+E. Test for Multiple Chassis at Remote Site
+Not test ,  Terminals are not enough for this test. 
+
+=================
+Test 30: DAMA test for Remote Star Group 
+30). Delete Star11 and create only one star group: Star12
+A
+DAMA  
+1). DAMA connection from Remote#4 to Hub: 
+2). DAMA connection from Remote#5 to Hub: 
+3). DAMA connection from Remote#6 to Hub: 
+4). DAMA connection from Hub to Remote#4 (PC): 
+5). DAMA connection from Hub to Remote#5 (PC): 
+6). DAMA connection from Hub to Remote#6 (PC): 
+7). DAMA connection from Remote#4 to Remote#5: 
+8). DAMA connection from Remote#6 to Remote#5: 
+9). DAMA connection from Remote#5 to Remote#4: 
+10). Voip connection from Remote#4 to Hub: 
+11). Voip connection from Remote#5 to Hub:
+12). Voip connection from Hub to Remote#4: 
+13). Voip connection from Hub to Remote#5: 
+14). Voip connection from Remote#4 to Remote#5: 
+Double Hop
+15). DAMA connection from Remote#4 to Remote#6: 
+B
+BOD:  
+1). FTP from Remote#4 to Hub: 
+2). FTP from Remote#5 to Hub: 
+3). FTP from Remote#6 to Hub: 
+4). FTP from Hub to any of Remotes: 
+5). FTP from Remote#4 to Remote#5: 
+6). FTP from Remote#6 to Remote#5: 
+7). FTP from Remote#5 to Remote#6: 
+C
+Multicast:
+a. Do not use the 2nd transmitter at Hub:
+1). Mcast1 ,  Multicast from Hub over the STSR:__
+b. Use the 2nd transmitter at Hub:
+2). Mcast2 ,  Multicast from Hub over the 2nd transmitter: __
+
+c. Remote Multicasts:
+3). Mcast3 ,  Multicast from Remote#4 to Hub and Remote#5&6: __
+
+D
+ALFC
+1). Hub: not test ,  adjustable L-Band attenuator is to be needed under IF Loop.
+2). Remote#4: not test,  adjustable L-Band attenuator is to be needed under IF Loop.
+3). Remote#5: not test,  adjustable L-Band attenuator is to be needed under IF Loop.
+4). Remote#6: not test,  adjustable L-Band attenuator is to be needed under IF Loop.
+
+E. Test for Multiple Chassis at Remote Site
+Not test ,  Terminals are not enough for this test. 
+
+=================
+Test 31: DAMA test for Mesh Group Includes the Hub Site 
+31). Delete Star12 and create only one mesh group: Mesh3
+A
+DAMA   
+1). DAMA connection from Remote#4 to Hub: 
+2). DAMA connection from Remote#5 to Hub: 
+3). DAMA connection from Remote#6 to Hub: 
+4). DAMA connection from Hub to Remote#4 (PC): 
+5). DAMA connection from Hub to Remote#5 (PC): 
+6). DAMA connection from Hub to Remote#6 (PC): 
+7). DAMA connection from Remote#4 to Remote#5: 
+8). DAMA connection from Remote#4 to Remote#6: 
+9). DAMA connection from Remote#5 to Remote#6: 
+10). Voip connection from Remote#4 to Hub: 
+11). Voip connection from Remote#5 to Hub: 
+12). Voip connection from Hub to Remote#4: 
+13). Voip connection from Hub to Remote#5: 
+14). Voip connection from Remote#4 to Remote#5: 
+Double Hop
+DHOP should not be supported by Mesh Group. 
+B
+BOD:  
+1). FTP from Remote#4 to Hub: 
+2). FTP from Remote#5 to Hub: 
+3). FTP from Remote#6 to Hub: 
+4). FTP from Remote#4 to Remote#5: 
+5). FTP from Remote#4 to Remote#6:
+6). FTP from Remote#5 to Remote#6: 
+C
+Multicast:
+a. Do not use the 2nd transmitter at Hub:
+1). Mcast1 ,  Multicast from Hub over the STSR:__
+b. Use the 2nd transmitter at Hub:
+2). Mcast2 ,  Multicast from Hub over the 2nd transmitter: __
+
+c. Remote Multicasts:
+3). Mcast3 ,  Multicast from Remote#4 to Hub and Remote#5&6: __
+
+D
+ALFC
+1). Hub: not test ,  adjustable L-Band attenuator is to be needed under IF Loop.
+2). Remote#4: not test,  adjustable L-Band attenuator is to be needed under IF Loop.
+3). Remote#5: not test,  adjustable L-Band attenuator is to be needed under IF Loop.
+4). Remote#6: not test,  adjustable L-Band attenuator is to be needed under IF Loop.
+
+E. Test for Multiple Chassis at Remote Site
+Not test ,  Terminals are not enough for this test. 
+
+=================
+Test 32: DAMA test for Mesh Group Excludes the Hub Site 
+32). Delete Mesh3 and create only one mesh group: Mesh4
+A
+DAMA   
+1). DAMA connection from Remote#4 to Hub: 
+2). DAMA connection from Remote#5 to Hub: 
+3). DAMA connection from Remote#6 to Hub: 
+4). DAMA connection from Hub to Remote#4 (PC): 
+5). DAMA connection from Hub to Remote#5 (PC): 
+6). DAMA connection from Hub to Remote#6 (PC): 
+7). DAMA connection from Remote#4 to Remote#5: 
+8). DAMA connection from Remote#4 to Remote#6: 
+9). DAMA connection from Remote#5 to Remote#6: 
+10). Voip connection from Remote#4 to Hub: 
+11). Voip connection from Remote#5 to Hub: 
+12). Voip connection from Hub to Remote#4: 
+13). Voip connection from Hub to Remote#5: 
+14). Voip connection from Remote#4 to Remote#5: 
+Double Hop
+DHOP should not be supported by Mesh Group. 
+B
+BOD:  
+1). FTP from Remote#4 to Hub: 
+2). FTP from Remote#5 to Hub: 
+3). FTP from Remote#6 to Hub: 
+4). FTP from Remote#4 to Remote#5: 
+5). FTP from Remote#4 to Remote#6:
+6). FTP from Remote#5 to Remote#6: 
+C
+Multicast:
+a. Do not use the 2nd transmitter at Hub:
+1). Mcast1 ,  Multicast from Hub over the STSR:__
+b. Use the 2nd transmitter at Hub:
+2). Mcast2 ,  Multicast from Hub over the 2nd transmitter: __
+
+c. Remote Multicasts:
+3). Mcast3 ,  Multicast from Remote#4 to Hub and Remote#5&6: __
+
+D
+ALFC
+1). Hub: not test ,  adjustable L-Band attenuator is to be needed under IF Loop.
+2). Remote#4: not test,  adjustable L-Band attenuator is to be needed under IF Loop.
+3). Remote#5: not test,  adjustable L-Band attenuator is to be needed under IF Loop.
+4). Remote#6: not test,  adjustable L-Band attenuator is to be needed under IF Loop.
+
+E. Test for Multiple Chassis at Remote Site
+Not test ,  Terminals are not enough for this test. 
+
+=================

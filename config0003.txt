@@ -1,0 +1,297 @@
+Doc: config0003.txt
+
+Description:
+  Configurations via NMS
+
+
+1. Configuration of NMCS
+===========================
+A. Band Blocks: 14.228GHz � 14.264MHz (Total 36MHz) � Contains the Outbound 
+Signaling Channel
+B. Downlink Offset: 1.75GHz
+C. Carrier Spacing: 1.4
+D. Frequency Bands: 14.236GHz � 14.264GHz (Total 28MHz)
+E. Outbound Frequency: 14.231GHz
+F. Outbound Rate: 512kbps
+G. Inbound Frequency: 12.485GHz
+H. Inbound Rate: 48kbps
+I. Network Options: QPSK for Test1-Test16, 8PSK for Test17-Test32
+J. Hub Overflow Outbound Configurations:
+    Min Rate: 128kbps
+    Max Rate: 4096kbps
+    Threshold: 60%
+    Measure Time: 20 Sec
+    Rate Increment: 32kbps
+    BOD Enabled: Unchecked for Test1,2,9,10,17,18,25&26; 
+    Checked for Test 3, 4, 11, 12, 19, 20, 27&28.
+    Initial Rate: 128Kbps
+    Drop Time: 30 Sec
+K. Remote Terminal Configurations: (All the Same)
+    Min Rate: 64kbps
+    Max Rate: 1024kbps
+    Threshold: 60%
+    Measure Time: 20 Sec
+    Rate Increment: 32kbps
+    BOD Enabled: Checked
+    Initial Rate: 64Kbps
+    Drop Time: 30 Sec
+L. Multicast Configurations: 
+Mcast1: 
+      Tx: Hub
+      Rx: Remote#4, Remote#5, Remote#6
+      Date Rate: Any(from 16-8192 Kbps)
+      Transmit Return: 0
+      Use the 2nd transmitter: Unchecked
+Mcast2: 
+Tx: Hub
+      Rx: Remote#4, Remote#5, Remote#6
+      Date Rate: 2048~8192 Kbps
+      Transmit Return: 0
+      Use the 2nd transmitter: Checked
+Mcast3:
+Tx: Remote#4
+      Rx: Hub, Remote#5, Remote#6
+      Date Rate: 1024 Kbps
+      Transmit Return: 0
+      Use the 2nd transmitter: Unchecked
+
+2. Configuration of Connection Groups
+===========================
+
+Configuration of Connection Groups
+Group No./Name: Star1
+Type of Group: Star
+Center - Terminal: Hub Site
+Group Members: Terminal#4, Terminal#5, Terminal#6
+Min Data Rate: 64Kbps
+Max Data Rate: 1024Kbps
+FEC Rate: Turbo .72
+Coding: Turbo
+Routing Options: Static
+Enable Overflow Outbound: Unchecked
+Bandwidth limit of group: 8000000Hz
+
+Configuration of Connection Groups
+Group No./Name: Star2
+Type of Group: Star
+Center - Terminal: Hub Site
+Group Members: Terminal#4, Terminal#5, Terminal#6
+Min Data Rate: 64Kbps
+Max Data Rate: 1024Kbps
+FEC Rate: Turbo .72
+Coding: Turbo
+Routing Options: General
+Enable Overflow Outbound: Unchecked
+Bandwidth limit of group: 8000000Hz
+
+Configuration of Connection Groups
+Group No./Name: Star3
+Type of Group: Star
+Center - Terminal: Hub Site
+Group Members: Terminal#4, Terminal#5, Terminal#6
+Min Data Rate: 64Kbps
+Max Data Rate: 4096Kbps
+FEC Rate: Turbo .72
+Coding: Turbo
+Routing Options: Static
+Enable Overflow Outbound: Checked
+Bandwidth limit of group: 8000000Hz
+
+Configuration of Connection Groups
+Group No./Name: Star4
+Type of Group: Star
+Center - Terminal: Hub Site
+Group Members: Terminal#4, Terminal#5, Terminal#6
+Min Data Rate: 64Kbps
+Max Data Rate: 4096Kbps
+FEC Rate: Turbo .72
+Coding: Turbo
+Routing Options: General
+Enable Overflow Outbound: Checked
+Bandwidth limit of group: 8000000Hz
+
+Configuration of Connection Groups
+Group No./Name: Star5
+Type of Group: Star
+Center - Terminal: Terminal#5
+Group Members: Terminal#4, Terminal#6
+Min Data Rate: 64Kbps
+Max Data Rate: 1024Kbps
+FEC Rate: Turbo .72
+Coding: Turbo
+Routing Options: Static
+Bandwidth limit of group: 8000000Hz
+
+Configuration of Connection Groups
+Group No./Name: Star6
+Type of Group: Star
+Center - Terminal: Terminal#5
+Group Members: Terminal#4, Terminal#6
+Min Data Rate: 64Kbps
+Max Data Rate: 1024Kbps
+FEC Rate: Turbo .72
+Coding: Turbo
+Routing Options: General
+Bandwidth limit of group: 8000000Hz
+
+Configuration of Connection Groups
+Group No./Name: Star7
+Type of Group: Star
+Center - Terminal: Hub Site
+Group Members: Terminal#4, Terminal#5, Terminal#6
+Min Data Rate: 64Kbps
+Max Data Rate: 1024Kbps
+FEC Rate: Turbo .79
+Coding: Turbo
+Routing Options: Static
+Enable Overflow Outbound: Unchecked
+Bandwidth limit of group: 8000000Hz
+
+Configuration of Connection Groups
+Group No./Name: Star8
+Type of Group: Star
+Center - Terminal: Hub Site
+Group Members: Terminal#4, Terminal#5, Terminal#6
+Min Data Rate: 64Kbps
+Max Data Rate: 1024Kbps
+FEC Rate: Turbo .79
+Coding: Turbo
+Routing Options: General
+Enable Overflow Outbound: Unchecked
+Bandwidth limit of group: 8000000Hz
+
+Configuration of Connection Groups
+Group No./Name: Star9
+Type of Group: Star
+Center - Terminal: Hub Site
+Group Members: Terminal#4, Terminal#5, Terminal#6
+Min Data Rate: 64Kbps
+Max Data Rate: 4096Kbps
+FEC Rate: Turbo .79
+Coding: Turbo
+Routing Options: Static
+Enable Overflow Outbound: Checked
+Bandwidth limit of group: 8000000Hz
+
+Configuration of Connection Groups
+Group No./Name: Star10
+Type of Group: Star
+Center - Terminal: Hub Site
+Group Members: Terminal#4, Terminal#5, Terminal#6
+Min Data Rate: 64Kbps
+Max Data Rate: 4096Kbps
+FEC Rate: Turbo .79
+Coding: Turbo
+Routing Options: General
+Enable Overflow Outbound: Checked
+Bandwidth limit of group: 8000000Hz
+
+Configuration of Connection Groups
+Group No./Name: Star11
+Type of Group: Star
+Center - Terminal: Terminal#5
+Group Members: Terminal#4, Terminal#6
+Min Data Rate: 64Kbps
+Max Data Rate: 1024Kbps
+FEC Rate: Turbo .79
+Coding: Turbo
+Routing Options: Static
+Bandwidth limit of group: 8000000Hz
+
+Configuration of Connection Groups
+Group No./Name: Star12
+Type of Group: Star
+Center - Terminal: Terminal#5
+Group Members: Terminal#4, Terminal#6
+Min Data Rate: 64Kbps
+Max Data Rate: 1024Kbps
+FEC Rate: Turbo .79
+Coding: Turbo
+Routing Options: General
+Bandwidth limit of group: 8000000Hz
+
+Configuration of Connection Groups
+Group No./Name: Mesh1
+Type of Group: Mesh
+Group Members: Hub, Terminal#4, Terminal#5, Terminal#6
+Min Data Rate: 64Kbps
+Max Data Rate: 1024Kbps
+FEC Rate: Turbo .72
+Coding: Turbo
+Bandwidth limit of group: 8000000Hz
+
+Configuration of Connection Groups
+Group No./Name: Mesh2
+Type of Group: Mesh
+Group Members: Terminal#4, Terminal#5, Terminal#6
+FEC Rate: Turbo .72
+Coding: Turbo
+Bandwidth limit of group: 8000000Hz
+
+Configuration of Connection Groups
+Group No./Name: Mesh3
+Type of Group: Mesh
+Group Members: Hub, Terminal#4, Terminal#5, Terminal#6
+Min Data Rate: 64Kbps
+Max Data Rate: 1024Kbps
+FEC Rate: Turbo .79
+Coding: Turbo
+Bandwidth limit of group: 8000000Hz
+
+Configuration of Connection Groups
+Group No./Name: Mesh4
+Type of Group: Mesh
+Group Members: Terminal#4, Terminal#5, Terminal#6
+FEC Rate: Turbo .79
+Coding: Turbo
+Bandwidth limit of group: 8000000Hz
+
+
+3. Configurations of Hub
+========================
+
+Configurations of Hub
+ OTX: 
+1). Data rate: 512Kbps
+2). Frequency: 14231 MHz
+3). Coding: Turbo
+4). TPC: 0.72 for Test1- Test8, Test17-Test24;
+0.79 For Test9-Test16, Test25-Test32.
+5). Keying: QPSK for Test 1-Test16 and 8PSK for Test 17-Test32
+6). NCR: ON
+IB signaling:
+1). Data rate: 48Kbps
+2). Frequency: 12485MHz
+Local Site:
+1). RF Rx Center Frequency: 12496.0 MHz
+2). RF Rx Lo Frequency: 11300.0 MHz
+3). RF Tx Lo Frequency: 13050.0 MHz
+4). Alpha Factor: 0.35
+
+3. Configurations of Remote Terminals
+=====================================
+Configurations of Remote Terminals
+OTX: 
+1). Data rate: 512Kbps
+2). Frequency: 12481 MHz
+3). Coding: Turbo
+4). TPC: 0.72 for Test1,2,3,4,5,6,13,14,15,16,17&18;
+        0.79 for Test 7,8,9,10,11,12,19,20,21,22,23&24.
+5). Keying: QPSK for Test 1-Test16 and 8PSK for Test 17-Test32
+6). NCR: ON
+IB signaling:
+1). Data rate: 48Kbps
+2). Frequency: 14235MHz
+Local Site:
+1). RF Rx Center Frequency: 12496.0 MHz
+2). RF Rx Lo Frequency: 11300.0 MHz
+3). RF Tx Lo Frequency: 13050.0 MHz
+4). Alpha Factor: 0.35
+Eb/No of OTX in Remote Sites
+1). Remote #4: 16dB
+2). Remote #5: 16dB
+2). Remote #6: 16dB
+DAMA Carriers Eb/No in Hub Site
+1). From Remote #4: 14dB
+2). From Remote #5: 14dB
+3). From Remote #6: 14dB

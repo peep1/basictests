@@ -1,0 +1,49 @@
+Testid: 0004
+Doc: pp0004.txt
+
+Description:
+  Check List
+
+Note:
+Individual tests can be referred by
+   <doc number>.<Test number>.<Category>.<Subtest number>:
+
+5/20/2015 Todo: add the correct id to each below.
+==============
+Item
+Tests
+
+A. Basic Function Tests
+1.Log in GUI appears OK with Username / Password?
+    1) Jurisdiction is Trainee with Site
+    2) Jurisdiction is Trainee with Group
+    3) Jurisdiction is Trainee with Subnet
+    4) Jurisdiction is Trainee with System
+    5) Jurisdiction is Operator with Site
+    6) Jurisdiction is Operator with Group
+    7) Jurisdiction is Operator with Subnet
+    8) Jurisdiction is Operator with System
+    9) Jurisdiction is Engineer with Site
+    10) Jurisdiction is Engineer with Group
+    11) Jurisdiction is Engineer with Subnet
+    12) Jurisdiction is Engineer with System
+    13) Jurisdiction is Administrator with Site
+    14) Jurisdiction is Administrator with Group
+    15) Jurisdiction is Administrator with Subnet
+    16) Jurisdiction is Administrator with System
+2. Configure Log in Users, add, edit and delete
+3. Launch Configuration Page
+4. Launch Operation Page
+5. Launch MAP page, zoom and pan 
+6. Configure DAMA Pool, add, edit and delete
+7. Configure terminals, add, edit and delete
+8. Configure Connection Groups
+9. Configuration Page System Reset Button
+
+B. PAMA Operation
+1. Open PAMA page
+2. Launch PAMA connection
+
+C. Videoconference tests
+1. Initiate video link p-t-p, rate: _____ kbps
+2. Initiate video multicast p-t-mp: rates _____kbps

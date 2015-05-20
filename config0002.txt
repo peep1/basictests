@@ -1,0 +1,47 @@
+Doc: config0002.txt
+
+Description:
+  Connection types and MODCODs
+
+Configurations:
+
+1) Test for QPSK with Turbo 0.72:
+Test 1: DAMA test for Star Group with Static and Overflow Outbound Unchecked
+Test 2: DAMA test for Star Group with General and Overflow Outbound Unchecked
+Test 3: DAMA test for Star Group with Static and Overflow Outbound Checked
+Test 4: DAMA test for Star Group with General and Overflow Outbound Checked
+Test 5: DAMA test for Remote Star Group with Static
+Test 6: DAMA test for Remote Star Group with General
+Test 7: DAMA test for Mesh Group Includes the Hub Site
+Test 8: DAMA test for Mesh Group Excludes the Hub Site
+
+2) Test for QPSK with Turbo 0.79:
+Test 9: DAMA test for Star Group with Static and Overflow Outbound Unchecked
+Test 10: DAMA test for Star Group with General and Overflow Outbound Unchecked
+Test 11: DAMA test for Star Group with Static and Overflow Outbound Checked
+Test 12: DAMA test for Star Group with General and Overflow Outbound Checked
+Test 13: DAMA test for Remote Star Group with Static
+Test 14: DAMA test for Remote Star Group with General
+Test 15: DAMA test for Mesh Group Includes the Hub Site
+Test 16: DAMA test for Mesh Group Excludes the Hub Site
+
+3) Test for 8PSK with Turbo 0.72:
+Test 17: DAMA test for Star Group with Static and Overflow Outbound Unchecked
+Test 18: DAMA test for Star Group with General and Overflow Outbound Unchecked
+Test 19: DAMA test for Star Group with Static and Overflow Outbound Checked
+Test 20: DAMA test for Star Group with General and Overflow Outbound Checked
+Test 21: DAMA test for Remote Star Group with Static
+Test 22: DAMA test for Remote Star Group with General
+Test 23: DAMA test for Mesh Group Includes the Hub Site
+Test 24: DAMA test for Mesh Group Excludes the Hub Site
+
+4) Test for 8PSK with Turbo 0.79:
+Test 25: DAMA test for Star Group with Static and Overflow Outbound Unchecked
+Test 26: DAMA test for Star Group with General and Overflow Outbound Unchecked
+Test 27: DAMA test for Star Group with Static and Overflow Outbound Checked
+Test 28: DAMA test for Star Group with General and Overflow Outbound Checked
+Test 29: DAMA test for Remote Star Group with Static
+Test 30: DAMA test for Remote Star Group with General
+Test 31: DAMA test for Mesh Group Includes the Hub Site
+Test 32: DAMA test for Mesh Group Excludes the Hub Site
+
