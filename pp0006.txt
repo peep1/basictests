@@ -1,0 +1,18 @@
+Testid: 0006
+Doc: pp0006.txt
+
+Description:
+  Redundancy
+
+Note:
+==============
+
+0006.1 Database sync, transmission parameters
+    The procedure:
+    1) When the Primary NCS is active, and Backup NCS is Standby, modify the "Transmission" from the Primary, and then to save it by pressing APPLY;
+    2) To write down the new values of "Transmission";
+    3) The database is supposed to be synchronized to the Standby NCS, so that the Standby NCS will have the same "Transmission";
+    4) To do the switch for the NCS from the GUI, so that the Primary NCS is Standby, and the Backup NCS is active;
+    5) To close all GUIs and wait for a while;
+    6) To re-open the GUI, and check if the Backup NCS is active now;
+    7) To check the "Transmission", and see if it is the same as what you wrote down.
